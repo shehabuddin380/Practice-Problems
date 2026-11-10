@@ -1,6 +1,14 @@
-def main():
-    print("Hello from fastapi-practice-api!")
+from fastapi import FastAPI
+
+app = FastAPI(
+    title="FastAPI Class 03 Practice API",
+    description="10 scenario-based FastAPI and Pydantic practice exercises",
+    version="1.0.0",
+)
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def home():
+    return {
+        "message": "FastAPI Class 03 API is running"
+    }
