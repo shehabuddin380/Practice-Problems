@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Path, Query, status
 from app.schemas.delivery import Delivery
 
-router = APIRouter(prefix="/deliveries", tags=["Deliveries"])
+router = APIRouter(prefix="/deliveries", tags=["Deliverie"])
 delivery_db = {
     1001: {"tracking_id": 1001, "status": "in_transit"},
     1002: {"tracking_id": 1002, "status": "delivered"},
